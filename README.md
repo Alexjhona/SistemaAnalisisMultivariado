@@ -15,8 +15,7 @@ This Streamlit application was created to **solve business problems involving ti
 
 1. **Clone the repository and install dependencies:**
     ```bash
-    git clone https://github.com/your-user/your-repo.git
-    cd your-repo
+    git clone https://github.com/higorfct/Projeto-6-Benchmark-de-S-ries-Temporais.git
     pip install -r requirements.txt
     ```
 
