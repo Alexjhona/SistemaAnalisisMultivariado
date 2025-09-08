@@ -114,6 +114,8 @@ This Streamlit application was created to **solve business problems involving ti
 - Summary of forecasted values (first and last in the horizon).
 - Preview of the first values in the loaded series.
 
+<img width="1460" height="904" alt="image" src="https://github.com/user-attachments/assets/a2173960-b776-4230-b039-beb4ea6b1d13" />
+
 ## 🧩 Main dependencies
 
 - `streamlit`
