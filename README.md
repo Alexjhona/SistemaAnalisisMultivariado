@@ -60,7 +60,7 @@ This Streamlit application was created to **solve business problems involving ti
 - Preview of the first values in the loaded series.
 
 You can acess the web application on Streamlit by clicking on this link: [https://projeto-6-benchmark-de-s-ries-temporais-ksxpsqtyvmi5wfqbl3r3h2.streamlit.app/
-[<img width="1460" height="904" alt="image" src="https://github.com/user-attachments/assets/a2173960-b776-4230-b039-beb4ea6b1d13" />
+<img width="1460" height="904" alt="image" src="https://github.com/user-attachments/assets/a2173960-b776-4230-b039-beb4ea6b1d13" />
 
 ## 🧩 Main dependencies
 
