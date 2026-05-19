@@ -1,105 +1,66 @@
-# 📈 Sistema de Pronóstico de Series de Tiempo
+# 📊 Calculadora de Análisis Multivariado
 
-Aplicación web desarrollada en Python con Streamlit para cargar datos en formato CSV o Excel y generar pronósticos mediante métodos básicos de series de tiempo.
+Aplicación web desarrollada con **Python** y **Streamlit** para cargar datos en formato **CSV o Excel** y resolver análisis relacionados con series de tiempo, pronósticos, regresión lineal múltiple y matriz de confusión.
 
 ## 📌 Descripción
 
-El sistema permite al usuario cargar un archivo con datos de una serie temporal, seleccionar una columna de tiempo y una columna numérica, y generar pronósticos automáticos utilizando diferentes métodos clásicos.
+El sistema permite cargar una base de datos, visualizar su contenido y aplicar diferentes métodos de análisis de forma interactiva.  
+Está orientado al desarrollo de ejercicios académicos donde se requiere seleccionar variables, generar resultados, interpretar métricas y obtener gráficos de apoyo.
 
-La aplicación presenta una vista previa de los datos, información general del conjunto cargado, tabla de pronósticos, resumen de resultados, descripción de los métodos aplicados y gráficas comparativas e individuales.
+La aplicación permite trabajar con datos numéricos, columnas de tiempo, variables dependientes, variables independientes y variables de clasificación.
 
-## 🧠 Métodos implementados
+## ✨ Funcionalidades principales
 
-Los métodos de pronóstico incluidos en la aplicación son:
+- Carga de archivos CSV, XLSX o XLS.
+- Vista previa de la data cargada.
+- Limpieza y revisión básica de datos.
+- Análisis de series de tiempo.
+- Generación de pronósticos.
+- Comparación de métodos de pronóstico.
+- Regresión lineal múltiple.
+- Modelo optimizado según significancia estadística.
+- Matriz de correlación.
+- Diagnóstico del modelo mediante residuos y VIF.
+- Gráficos automáticos para presentación.
+- Predicción con nuevos valores.
+- Clasificación y matriz de confusión.
+- Conversión de variables numéricas a categorías Alto/Bajo.
+- Cálculo de métricas como exactitud, precisión, sensibilidad, especificidad y F1-score.
 
-- Método ingenuo
-- Método de la media
-- Método de la media móvil
-- Método de la deriva
-- Método ingenuo estacional
+## 📈 Series de tiempo y pronósticos
 
-## 📁 Estructura del proyecto
+Este módulo permite seleccionar una columna de tiempo, fecha, año o periodo, junto con una variable numérica a pronosticar.
+
+Métodos incluidos:
+
+- Método ingenuo.
+- Método de la media.
+- Media móvil simple.
+- Método de la deriva.
+- Suavizamiento exponencial simple.
+- Proyección de tendencia lineal.
+- Método ingenuo estacional.
+
+El sistema genera una tabla de pronósticos, gráficos comparativos y una comparación de errores para identificar el método con mejor desempeño según RMSE.
+
+## 📉 Regresión lineal múltiple
+
+Este módulo permite estimar una variable dependiente numérica a partir de varias variables independientes.
+
+El sistema muestra:
+
+- Matriz de correlación.
+- Ecuación del modelo.
+- Coeficientes.
+- R² y R² ajustado.
+- p-value global del modelo.
+- Variables significativas.
+- Modelo optimizado.
+- VIF para revisar multicolinealidad.
+- Diagnóstico gráfico de residuos.
+- Predicción con nuevos valores.
+
+La forma general del modelo es:
 
 ```txt
-TIME-SERIES-BENCHMARK-PROJECT
-├── .streamlit
-│   └── config.toml
-├── datos
-│   └── apple.csv
-├── app.py
-├── README.md
-├── requirements.txt
-└── venv  
-
-## Formato de estructura: 
-
-fecha,valor
-1/05/2023,169.5
-2/05/2023,170.2
-3/05/2023,172.1
-4/05/2023,173.5
-
-
-⚙️ Requisitos
-
-
-
-Si el proyecto fue descargado manualmente, solo abrir la carpeta del proyecto en Visual Studio Code.
-
-🐍 Crear entorno virtual
-
-En Windows, ejecutar:
-
-
-python -m venv venv
-
-
-Activar el entorno virtual:
-
-
-.\venv\Scripts\activate
-
-Si se usa PowerShell y aparece un error de permisos, ejecutar:
-
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-
-
-Luego volver a activar:
-
-.\venv\Scripts\activate
-
-📥 Instalar librerías
-
-Actualizar pip:
-
-python -m pip install --upgrade pip
-
-Instalar las dependencias del proyecto:
-
-
-pip install -r requirements.txt
-
-
-El archivo requirements.txt debe contener:
-
-streamlit
-pandas
-numpy
-matplotlib
-statsmodels
-openpyxl
-
-
-
-▶️ Ejecutar la aplicación
-
-Para iniciar la aplicación, ejecutar:
-
-
-
-
-
-Este en Windows: 
-
-python -m streamlit run app.py
-
+Y = a + b1X1 + b2X2 + ... + bnXn
