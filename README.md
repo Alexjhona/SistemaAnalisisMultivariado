@@ -244,49 +244,6 @@ Archivo de configuración visual de Streamlit.
 
 ---
 
-# ⚠️ Archivos que no se suben al repositorio
-
-No se sube el entorno virtual ni archivos temporales.  
-Por eso el proyecto incluye un archivo `.gitignore` con configuraciones como:
-
-```gitignore
-venv/
-__pycache__/
-*.pyc
-.env
-.streamlit/secrets.toml
-.ipynb_checkpoints/
-*.zip
-*.rar
-*.7z
-```
-
-El entorno virtual `venv` no se incluye en GitHub porque cada usuario debe crearlo en su propia computadora.
-
-El archivo `.env` tampoco se sube al repositorio porque puede contener configuraciones privadas, claves o rutas locales.
-
----
-
-# 🤖 Consulta con IA local
-
-La sección de consulta con IA local es opcional.
-
-El sistema principal funciona sin IA y permite resolver:
-
-- Series de tiempo y pronósticos.
-- Regresión lineal múltiple.
-- Clasificación.
-- Matriz de confusión.
-
-Para usar la consulta con IA local se requiere tener **LM Studio** ejecutándose localmente en:
-
-```text
-http://localhost:1234
-```
-
-Si no se utiliza LM Studio, los módulos estadísticos funcionan normalmente.
-
----
 
 # ✅ Uso general del sistema
 
